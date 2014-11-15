@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeGiwiro" parent="@style/Theme.AppCompat">
+    </style>
+    <style name="ThemeGiwiro.NoActionBar" parent="ThemeGiwiro">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ThemeGiwiro.NoActionBar.Fullscreen" parent="ThemeGiwiro.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

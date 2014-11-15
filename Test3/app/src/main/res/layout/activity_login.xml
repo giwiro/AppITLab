@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="#fc9a24">
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/img_titulo"
+        android:layout_gravity="center"
+        android:src="@drawable/itlab"
+        android:paddingBottom="200dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:singleLine="true"
+        android:lines="1"
+        android:maxLines="1"
+
+        android:id="@+id/user"
+        android:textColorHint="#DDFFFFFF"
+        android:hint="Usuario"
+
+        android:layout_marginBottom="150dp"
+
+        android:layout_alignBottom="@+id/img_titulo"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/user_icon"
+        android:id="@+id/user_icon"
+        android:alpha="0.8"
+        android:layout_alignTop="@+id/user"
+        android:layout_alignLeft="@+id/user"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:inputType="textPassword"
+        android:id="@+id/password"
+
+        android:layout_marginTop="-150dp"
+
+        android:textColorHint="#FFFFFF"
+        android:hint="Password"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/lock_icon"
+        android:alpha="0.8"
+        android:id="@+id/password_icon"
+        android:layout_alignTop="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Ingresar"
+        android:id="@+id/login"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borde_redondeado"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+</RelativeLayout>
+
+
